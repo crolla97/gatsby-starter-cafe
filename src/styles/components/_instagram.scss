@@ -1,0 +1,85 @@
+.insta {
+  margin-top: 60px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+  span {
+
+  }
+  .insta-posts {
+    list-style-type: none;
+    margin: 30px 0 90px;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    @media screen and (min-width: 630px) {
+      grid-template-columns: repeat(2, 280px);
+      grid-template-rows: auto;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: repeat(3, 280px);
+      grid-template-rows: repeat(2, 280px);
+    }
+    
+    li:nth-child(4) {
+      display: none;
+      @media screen and (min-width: 630px) {
+        display: block;
+      }
+    }
+
+    li:nth-child(5) {
+      display: none;
+      @media screen and (min-width: 1024px) {
+        display: block;
+      }
+    }
+
+    li:nth-child(6) {
+      display: none;
+      @media screen and (min-width: 1024px) {
+        display: block;
+      }
+    }
+
+    .insta-post {
+      position: relative;
+      height: 280px;
+      width: 280px;
+      margin: 0;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease-out;
+        background-color: $green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        .icon {
+          height: 25px;
+          color: #fff;
+          margin: 0;
+        }
+        .text {
+          color: #fff;
+          font-size: 25px;
+          padding: 0 10px;
+        }
+      }
+    }
+
+    .insta-post:hover .overlay {
+      opacity: 0.8  ;
+    }
+  }
+}

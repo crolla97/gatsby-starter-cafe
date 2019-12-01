@@ -1,0 +1,45 @@
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: $green;
+  color: #fff;
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 0;
+    @media screen and (min-width:630px) {
+      flex-direction: row;
+    }
+    
+    h3 {
+      color: #fff;
+    }
+    div {
+      padding: 30px 0 0;
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width:630px) {
+        padding: 30px 20px 0;
+      }
+      @media screen and (min-width:1024px) {
+        padding: 30px 50px 0;
+      }
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 4px;
+    transition: 0.3s;
+  }
+  a:hover {
+    color: rgb(202, 129, 32);
+  }
+}
