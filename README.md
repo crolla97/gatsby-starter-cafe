@@ -51,10 +51,11 @@ To add your business' coordinates onto the map, change the ```index.js``` file:
     }
 ```
 
-**IMPORTANT NOTE**: In order for site to run, Contentful has to set up in exactly as shown in the pictures above. If you want to create different content models then some static queries and files will have to be updated or this will cause an error. These queries can be found in the following files: ```breakfast.js``` ```lunch.js``` ```hotDrinks.js``` ```coldDrink.js```
+**IMPORTANT NOTE**: In order for the site to run, Contentful has to set up in exactly as shown in the pictures above. If you want to create different content models then some static queries and files will have to be updated or this will cause an error. These queries can be found in the following files: ```breakfast.js``` ```lunch.js``` ```hotDrinks.js``` ```coldDrink.js```
 
-Now you can run:
-```gatsby develop```
+Any questions or problems please open an issue I'll be happy to help.
+
+Happy Coding!! :computer:
 
 ## 🎓 Learning Gatsby
 
