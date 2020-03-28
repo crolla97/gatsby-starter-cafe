@@ -17,17 +17,17 @@ const Menu = () => {
     SelectedCategory = Lunch
   }
   
-  return (
-    <section className="menu">
-      <h2>OUR MENUS</h2>
-      <ul className="menu-headers">
-        <li className="menu-header" onClick={() => setMenuCategory('hotDrinks')}>Hot Drinks</li>
-        <li className="menu-header" onClick={() => setMenuCategory('coldDrinks')}>Cold Drinks</li>
-        <li className="menu-header" onClick={() => setMenuCategory('breakfast')}>Breakfast</li>
-        <li className="menu-header" onClick={() => setMenuCategory('lunch')} >Lunch</li>
-      </ul>
-      <SelectedCategory />
-    </section>
+  return (null
+    // <section className="menu">
+    //   <h2>OUR MENUS</h2>
+    //   <ul className="menu-headers">
+    //     <li className="menu-header" onClick={() => setMenuCategory('hotDrinks')}>Hot Drinks</li>
+    //     <li className="menu-header" onClick={() => setMenuCategory('coldDrinks')}>Cold Drinks</li>
+    //     <li className="menu-header" onClick={() => setMenuCategory('breakfast')}>Breakfast</li>
+    //     <li className="menu-header" onClick={() => setMenuCategory('lunch')} >Lunch</li>
+    //   </ul>
+    //   <SelectedCategory />
+    // </section>
   )
 }
 

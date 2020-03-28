@@ -33,14 +33,15 @@ return (
     </section>
     <div className="parallax"></div>
     <section className="container">
-      <Menu />
+      {/* <Menu /> */}
+      <Countdown date={'30 Oct 2020 00:03:00 GMT'} />
       <Instagram />
     </section>
     {typeof window !== 'undefined' &&
       <LeafletMap
-        position={[55.952103, -3.196175]} // Your Coordinates
-        zoom={18} // Zoom Level
-        markerText={"Local Cafe, 65 Park Row"} // Icon text
+        position={[38.893908, -77.040280]} // Your Coordinates
+        zoom={14} // Zoom Level
+        // markerText={"Daughter's of the American Revolution Memorial Hall", "St. Peter's Church on Capitol Hill"} // Icon text
       />
     }
     <Footer />

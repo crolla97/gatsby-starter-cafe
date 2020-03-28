@@ -1,16 +1,83 @@
+// header {
+//   position: fixed;
+//   z-index: 10;
+//   height: 50px;
+//   width: 100%;
+//   background-color: $green;
+//   color: #fff;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 0 10px;
+  
+//   span {
+//     font-size: $ms-size;
+//   }
+// }
+
+$smallerDevicesMaxWidth: 360px;
+$maxWidth: 700px;
+$minWidth: 701px;
+$maxHeight: 600px;
+
 header {
-  position: fixed;
-  z-index: 10;
-  height: 50px;
   width: 100%;
-  background-color: $green;
-  color: #fff;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.4);
+  box-sizing: border-box;
+  background-color: cyan;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  display: flex !important; 
+  flex-direction: column; 
+  align-items: center;
+  //   fix at the top of page
+  top: 0px;
+  padding: 28px 1rem 0 1rem;
+
+  display: flex;
+  // to have logo on the left and links on the right
+  justify-content: space-between;
+}
+
+@media (max-width: $maxWidth) {
+  .header {
+    height: 54px;
+  }
+}
+@media (min-width: $minWidth) and (min-height: $maxHeight) {
+  .header {
+    height: 72px;
+  }
+}
+// headerMenu
+.headerMenu {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-  
-  span {
-    font-size: $ms-size;
+}
+
+.headerMenu li a {
+  display: block;
+  text-decoration: none;
+}
+@media (max-width: $maxWidth) {
+  .headerMenu li a {
+    padding: 3px 10px 5px 0;
+    font-size: 16px;
+  }
+}
+@media (max-width: $smallerDevicesMaxWidth) {
+  .headerMenu li a {
+    padding: 3px 5px 5px 0;
+    font-size: 13px;
+  }
+}
+@media (min-width: $minWidth) {
+  .headerMenu li a {
+    padding: 15px 15px;
+    font-size: 22px;
   }
 }
