@@ -15,6 +15,20 @@
 //   }
 // }
 
+@font-face {
+  font-family: 'Burgues Crazy';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/Burgues Script Regular.otf');  
+}
+
+@font-face {
+  font-family: 'Burgues';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Burgues Script"), local('BurguesScript'), url("https://d3jpwrui3eswtl.cloudfront.net/burguesscript/BurguesScript-Regular.otf") format('opentype');
+}
+
 $smallerDevicesMaxWidth: 360px;
 $maxWidth: 700px;
 $minWidth: 701px;
@@ -26,7 +40,8 @@ header {
   z-index: 1;
   border-bottom: 1px solid rgba(205, 205, 205, 0.4);
   box-sizing: border-box;
-  background-color: cyan;
+  background-color: #D9D9D6;
+  background-image: url(https://www.google.com/url?sa=i&source=imgres&cd=&cad=rja&uact=8&ved=2ahUKEwjX46TsrL7oAhWVhHIEHfGpDQMQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F5981411990353548%2F&psig=AOvVaw2-5v6jydpNyDi4_-oUzWhD&ust=1585525484881204);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   display: flex !important; 
   flex-direction: column; 
@@ -48,6 +63,7 @@ header {
 @media (min-width: $minWidth) and (min-height: $maxHeight) {
   .header {
     height: 72px;
+    
   }
 }
 // headerMenu
@@ -62,6 +78,7 @@ header {
 .headerMenu li a {
   display: block;
   text-decoration: none;
+  font-family: 'MrsEavesRoman';
 }
 @media (max-width: $maxWidth) {
   .headerMenu li a {
@@ -80,4 +97,21 @@ header {
     padding: 15px 15px;
     font-size: 22px;
   }
+}
+
+li a {
+  color: black;
+}
+
+h1 {
+  font-family: 'Burgues';
+  font-size: 3.5rem;
+  text-align: -webkit-center;
+}
+h4 {
+  font-family: 'MrsEavesItalic';
+  font-size: 1.4rem;
+}
+h3 {
+  font-family: 'MrsEavesRoman';
 }

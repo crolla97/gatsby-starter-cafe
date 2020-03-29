@@ -14,8 +14,10 @@ class Header extends React.Component {
     // const {siteTitle} = this.props.siteTitle;
     return (
       <header>
-        <h1>Lily and Ben</h1>
-        <h3>Are Getting Married</h3>
+        <h1>Lily Olsakovsky</h1>
+        <h4>AND</h4>
+        <h1>Benjamin Bamberger</h1>
+        <h4>ARE GETTING MARRIED</h4>
         <ul className="headerMenu">
           {navItems.map(item => (
             <li>

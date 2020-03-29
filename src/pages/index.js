@@ -8,6 +8,7 @@ import Menu from '../components/menu/menu'
 import Instagram from '../components/instagram'
 import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
+import Countdown from '../components/countdown'
 
 const IndexPage = ({data}) => {
 
@@ -18,23 +19,29 @@ return (
       <Img fluid={data.coffeeShop.childImageSharp.fluid} className="hero-image"/>
     </section>
     <section className="container">
+      
       <span className="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <h3>Wedding Date:</h3>
+        <h3>October 30, 2020</h3>
+        <Countdown date={"30 Oct 2020 15:00:00 EST"} />
       </span>
+      
       <div className="gallery-grid">
         <Img fluid={data.latte.childImageSharp.fluid} className="gallery-img1"/>
         <Img fluid={data.coffeeBags.childImageSharp.fluid} className="gallery-img2"/>
         <Img fluid={data.coffeePortrait.childImageSharp.fluid} className="gallery-img3"/>
       </div>
       <div className="about-grid">
-        <h2>WE'RE CRAZY ABOUT COFFEE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>HOW WE MET</h2>
+        <p>
+          Lily And Ben first met at a party at Carnegie Mellon University in the Spring of '14. Lily then visited Ben for Outside Lands in August of 2015. They have been happily together since then, and Ben proposed to Lily on a trip to Scotland last October.
+        </p>
       </div>
     </section>
     <div className="parallax"></div>
     <section className="container">
       {/* <Menu /> */}
-      <Countdown date={'30 Oct 2020 00:03:00 GMT'} />
+      
       <Instagram />
     </section>
     {typeof window !== 'undefined' &&

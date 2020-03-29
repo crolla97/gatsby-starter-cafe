@@ -1,7 +1,7 @@
-import React from "react";
-import classNames from "classnames";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-export class Countdown extends React.Component {
+class Countdown extends React.Component {
 
   static propTypes = {
     date: PropTypes.string.isRequired,
@@ -88,7 +88,7 @@ export class Countdown extends React.Component {
     const countDown = this.state;
 
     return (
-      <div className={classNames("neal-countdown", this.props.className)}>
+      <div className="neal-countdown">
         <span className="countdown-col">
           <span className="countdown-col-element">
             <strong className="countdown-col-element-number">{this.addLeadingZeros(countDown.days)}</strong>
@@ -121,3 +121,5 @@ export class Countdown extends React.Component {
     );
   }
 }
+
+export default Countdown

@@ -25,9 +25,9 @@ class LeafletMap extends React.Component {
 
   static defaultProps = {
     position1: [38.893908, -77.040280], 
-    content1: "St. Peter's Church on Capitol Hill",
+    content1: "Daughter's of the American Revolution Memorial Hall",
     position2: [38.885611, -77.003768],
-    content2: "Daughter's of the American Revolution Memorial Hall",
+    content2: "St. Peter's Church on Capitol Hill",
     position3: [38.896994, -77.033426],
     content3: "W Hotel",
 

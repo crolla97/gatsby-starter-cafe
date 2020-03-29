@@ -80,25 +80,18 @@ h2 {
   }
   .about-grid {
     margin-top: 60px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: 
-    "h2"
-    "p";
-    @media screen and (min-width: 640px) {
-      grid-template-columns: 1fr 1.5fr;
-      grid-template-rows: repeat(2, auto);
-      grid-template-areas: 
-    "h2 ."
-    ". p";
+    display: flex;
+    flex-direction: row;
+    
+    
     margin-top: 80px;
-    }
+    
     h2 {
-      grid-area: h2;
+      width: 70vw;
+      text-align: center;
       @media screen and (min-width: 640px) {
         margin-bottom: 0;
-        text-align: end;
+        text-align: center;
       }
     }
     p {
