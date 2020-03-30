@@ -94,23 +94,24 @@ header {
 }
 @media (min-width: $minWidth) {
   .headerMenu li a {
-    padding: 15px 15px;
-    font-size: 22px;
+    padding: 8px 8px;
+    font-size: 0.58rem;
   }
 }
 
 li a {
   color: black;
+  
 }
 
 h1 {
   font-family: 'Burgues';
-  font-size: 3.5rem;
-  text-align: -webkit-center;
+  font-size: 1.45rem;
+  text-align:-webkit-center;
 }
 h4 {
   font-family: 'MrsEavesItalic';
-  font-size: 1.4rem;
+  font-size: 1.16rem;
 }
 h3 {
   font-family: 'MrsEavesRoman';

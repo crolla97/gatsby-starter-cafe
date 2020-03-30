@@ -10,6 +10,9 @@ import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
 import Countdown from '../components/countdown'
 
+import ReactDOM from 'react-dom';
+
+
 const IndexPage = ({data}) => {
 
 return (
@@ -18,6 +21,7 @@ return (
     <section className="hero">
       <Img fluid={data.coffeeShop.childImageSharp.fluid} className="hero-image"/>
     </section>
+    <div id="root"></div>
     <section className="container">
       
       <span className="description">

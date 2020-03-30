@@ -26,6 +26,8 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-leaflet": "^2.6.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19"
   },
