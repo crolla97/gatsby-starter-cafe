@@ -10,7 +10,7 @@ import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
 import Countdown from '../components/countdown'
 
-import ReactDOM from 'react-dom';
+
 
 
 const IndexPage = ({data}) => {
