@@ -36,7 +36,7 @@ $maxHeight: 600px;
 
 header {
   width: 100%;
-  position: fixed;
+  position: relative;
   z-index: 1;
   border-bottom: 1px solid rgba(205, 205, 205, 0.4);
   box-sizing: border-box;
@@ -65,6 +65,10 @@ header {
     height: 72px;
     
   }
+}
+.lilbitbam {
+  flex-direction: row;
+  display: flex;
 }
 // headerMenu
 .headerMenu {
@@ -95,7 +99,7 @@ header {
 @media (min-width: $minWidth) {
   .headerMenu li a {
     padding: 8px 8px;
-    font-size: 0.58rem;
+    font-size: 0.80rem;
   }
 }
 
@@ -112,6 +116,7 @@ h1 {
 h4 {
   font-family: 'MrsEavesItalic';
   font-size: 1.16rem;
+  margin-bottom: 0.64rem;
 }
 h3 {
   font-family: 'MrsEavesRoman';
