@@ -61,7 +61,7 @@ const SectionWipesStyled = styled.div`
     }
 
     .panel {
-        height: 100vh;
+        height: 360px;
         width: 100vw;
         text-align: center;
     }
@@ -90,6 +90,26 @@ const SectionWipesStyled = styled.div`
     .panel.bordeaux {
         background-color: #953543;
     }
+    .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        align-items: center;
+        
+        flex-wrap: wrap;
+        min-width: 320px;
+        max-width: 1220px;
+     }
+     .flex-item {
+        height: 120px;
+        width: 300px;
+        background-color: #e46119;
+        border: 1px solid #626262;
+        margin: 3px;
+        padding: 10px 0 0 10px;
+     }
     
 
 `;
@@ -119,7 +139,11 @@ const Events = ({data}) => {
                     <div id="trigger" />
                     <Controller globalSceneOptions={{ triggerHook: 0.36, vertical: false }}>                       
                         <Scene triggerElement=".timeline" duration="48%" indicators={true}>         
-                            <Tween from={{ x: '100%' }} to={{ x: '0%' }}>
+                            <Tween from={{ x: '100%' }} to={{ x: '0%' }}>\
+                                <div className="flex-container">
+                                    <div className="flex-item"><h1>test</h1></div>
+                                    <div className="flex-item"><img src="http://placehold.it/100x100" /></div>          
+                                </div>
                                 <section className="panel turqoise"><span>Panel</span></section>
                             </Tween>
                         </Scene>
