@@ -25,7 +25,7 @@ return (
     <section className="container">
       
       <span className="description">
-        <h3>Wedding Date:</h3>
+        <h2>Wedding Date</h2>
         <h3>October 30, 2020</h3>
         <Countdown date={"30 Oct 2020 15:00:00 EST"} />
       </span>
@@ -36,7 +36,7 @@ return (
         <Img fluid={data.coffeePortrait.childImageSharp.fluid} className="gallery-img3"/>
       </div>
       <div className="about-grid">
-        <h2>HOW WE MET</h2>
+        <h3 className="hwm">HOW WE MET</h3>
         <p>
           Lily And Ben first met at a party at Carnegie Mellon University in the Spring of '14. Lily then visited Ben for Outside Lands in August of 2015. They have been happily together since then, and Ben proposed to Lily on a trip to Scotland last October.
         </p>

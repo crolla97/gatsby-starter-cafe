@@ -13,9 +13,20 @@ main {
 }
 
 h2 {
+  font-family: 'Burgues';
+  font-size: 1.8rem;
   @media screen and (min-width: 1024px) {
     font-size: $xl-size;
+
   }
+}
+
+h3 {
+  font-family: 'MrsEavesRoman';
+  font-size: 1.5rem;
+}
+.hwm {
+  width: -webkit-fill-available;
 }
 
 .container {
