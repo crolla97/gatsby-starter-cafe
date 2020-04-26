@@ -6,9 +6,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Cafe`,
+    title: `Bambaroo Wedding`,
     description: `  `,
-    author: `Cristiano Crolla`,
+    author: `BennyBitcoin`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -44,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `kelvinpocketcafe`, // Your Instagram
+        username: `homegirl_lily`, // Your Instagram
       },
     },
     {

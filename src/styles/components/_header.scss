@@ -1,16 +1,123 @@
+// header {
+//   position: fixed;
+//   z-index: 10;
+//   height: 50px;
+//   width: 100%;
+//   background-color: $green;
+//   color: #fff;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 0 10px;
+  
+//   span {
+//     font-size: $ms-size;
+//   }
+// }
+
+@font-face {
+  font-family: 'Burgues Crazy';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/Burgues Script Regular.otf');  
+}
+
+@font-face {
+  font-family: 'Burgues';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Burgues Script"), local('BurguesScript'), url("https://d3jpwrui3eswtl.cloudfront.net/burguesscript/BurguesScript-Regular.otf") format('opentype');
+}
+
+$smallerDevicesMaxWidth: 360px;
+$maxWidth: 700px;
+$minWidth: 701px;
+$maxHeight: 600px;
+
 header {
-  position: fixed;
-  z-index: 10;
-  height: 50px;
   width: 100%;
-  background-color: $green;
-  color: #fff;
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.4);
+  box-sizing: border-box;
+  background-color: #D9D9D6;
+  background-image: url(https://www.google.com/url?sa=i&source=imgres&cd=&cad=rja&uact=8&ved=2ahUKEwjX46TsrL7oAhWVhHIEHfGpDQMQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F5981411990353548%2F&psig=AOvVaw2-5v6jydpNyDi4_-oUzWhD&ust=1585525484881204);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  display: flex !important; 
+  flex-direction: column; 
+  align-items: center;
+  //   fix at the top of page
+  top: 0px;
+  padding: 28px 1rem 0 1rem;
+
+  display: flex;
+  // to have logo on the left and links on the right
+  justify-content: space-between;
+}
+
+@media (max-width: $maxWidth) {
+  .header {
+    height: 54px;
+  }
+}
+@media (min-width: $minWidth) and (min-height: $maxHeight) {
+  .header {
+    height: 72px;
+    
+  }
+}
+.lilbitbam {
+  flex-direction: row;
+  display: flex;
+}
+// headerMenu
+.headerMenu {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-  
-  span {
-    font-size: $ms-size;
+}
+
+.headerMenu li a {
+  display: block;
+  text-decoration: none;
+  font-family: 'MrsEavesRoman';
+}
+@media (max-width: $maxWidth) {
+  .headerMenu li a {
+    padding: 3px 10px 5px 0;
+    font-size: 16px;
   }
+}
+@media (max-width: $smallerDevicesMaxWidth) {
+  .headerMenu li a {
+    padding: 3px 5px 5px 0;
+    font-size: 13px;
+  }
+}
+@media (min-width: $minWidth) {
+  .headerMenu li a {
+    padding: 8px 8px;
+    font-size: 0.80rem;
+  }
+}
+
+li a {
+  color: black;
+  
+}
+
+h1 {
+  font-family: 'Burgues';
+  font-size: 1.45rem;
+  text-align:-webkit-center;
+}
+h4 {
+  font-family: 'MrsEavesItalic';
+  font-size: 1.16rem;
+  margin-bottom: 0.64rem;
+}
+h3 {
+  font-family: 'MrsEavesRoman';
 }

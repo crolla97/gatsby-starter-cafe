@@ -5,5 +5,20 @@
 @import './components/instagram';
 @import './components/menu';
 @import './components/leafletMap';
+@import './components/countdown';
 
 @import './pages/index';
+
+@font-face {
+    font-family: "MrsEavesRoman";
+    font-style: normal;
+    font-weight: 500;
+    src: local("MrsEavesRoman"), local('MrsEavesRoman'), url("https://d3jpwrui3eswtl.cloudfront.net/mrseavesroman/MrsEavesRoman-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "MrsEavesItalic";
+    font-style: normal;
+    font-weight: 500;
+    src: local("MrsEavesItalic"), local('MrsEavesItalic'), url("https://d3jpwrui3eswtl.cloudfront.net/mrseavesitalic/MrsEavesItalic-Regular.ttf") format('truetype');
+}

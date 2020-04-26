@@ -12,13 +12,26 @@ class LeafletMap extends React.Component {
     zoom: PropTypes.number,
 
     /** If set, will display a marker, which when clicked will display this text **/
-    markerText: PropTypes.string
+    // markerText: PropTypes.string
   }
 
+  // static defaultProps = {
+  //   position: [55.92077,-4.33371],
+  //   zoom: 13,
+  //   markerText: ""
+  // }
+
+ 
+
   static defaultProps = {
-    position: [55.92077,-4.33371],
-    zoom: 13,
-    markerText: ""
+    position1: [38.893908, -77.040280], 
+    content1: "Daughter's of the American Revolution Memorial Hall",
+    position2: [38.885611, -77.003768],
+    content2: "St. Peter's Church on Capitol Hill",
+    position3: [38.896994, -77.033426],
+    content3: "W Hotel",
+
+    
   }
 
   render() {
@@ -29,9 +42,20 @@ class LeafletMap extends React.Component {
             url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
           />
+         
           {this.props.markerText !== "" &&
-          <Marker position={this.props.position}>
-            <Popup>{this.props.markerText}</Popup>
+          <Marker position={this.props.position1}>
+            <Popup>{this.props.content1}</Popup>
+          </Marker>
+          }
+          {this.props.markerText !== "" &&
+          <Marker position={this.props.position2}>
+            <Popup>{this.props.content2}</Popup>
+          </Marker>
+          }
+          {this.props.markerText !== "" &&
+          <Marker position={this.props.position3}>
+            <Popup>{this.props.content3}</Popup>
           </Marker>
           }
         </Map>
