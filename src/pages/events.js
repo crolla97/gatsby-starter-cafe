@@ -148,6 +148,20 @@ const SectionWipesStyled = styled.div`
     .churchImg {
         height: 300px;
     }
+        
+        flex-wrap: wrap;
+        min-width: 320px;
+        max-width: 1220px;
+     }
+     .flex-item {
+        height: 120px;
+        width: 300px;
+        background-color: #e46119;
+        border: 1px solid #626262;
+        margin: 3px;
+        padding: 10px 0 0 10px;
+     }
+    
 
 `;
 

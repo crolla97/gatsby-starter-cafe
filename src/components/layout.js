@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
     navItems: [
       { link: "/", name: "Home"},
       { link: "events", name: "Events"},
-      { link: "travel", name: "Travel"},
+      { link: "accomodations", name: "Travel"},
       { link: "registry", name: "Registry"},
       { link: "RSVP", name: "RSVP"},
       { link: "Wedding Party", name: "Wedding Party"},
